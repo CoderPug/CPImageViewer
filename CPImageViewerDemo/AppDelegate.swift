@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  CPImageViewer
+//  CPImageViewerDemo
 //
 //  Created by Jose Torres on 17/1/17.
 //  Copyright © 2017 Jose Torres. All rights reserved.
