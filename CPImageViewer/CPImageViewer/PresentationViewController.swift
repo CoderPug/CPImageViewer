@@ -68,7 +68,6 @@ class FullScreenViewControlller : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func dismissFullScreen() {
