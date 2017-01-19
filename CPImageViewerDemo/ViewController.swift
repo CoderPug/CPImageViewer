@@ -15,8 +15,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let temp = UIImageView()
-        temp.sayHi()
+        let imageView = CPImageView(image: UIImage(named: "image"))
+        imageView.frame = CGRect(x: 50, y: 50, width: 250, height: 150)
+        imageView.parentViewController = self
+        view.addSubview(imageView)
     }
 
     override func didReceiveMemoryWarning() {
