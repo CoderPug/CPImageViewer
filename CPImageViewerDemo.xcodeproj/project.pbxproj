@@ -13,6 +13,8 @@
 		083AD0411E2F1B39008CC029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083AD0401E2F1B39008CC029 /* Assets.xcassets */; };
 		083AD0441E2F1B39008CC029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083AD0421E2F1B39008CC029 /* LaunchScreen.storyboard */; };
 		083AD04F1E2F1B39008CC029 /* CPImageViewerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AD04E1E2F1B39008CC029 /* CPImageViewerDemoTests.swift */; };
+		083AD0641E2F1C67008CC029 /* CPImageViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083AD05F1E2F1B5D008CC029 /* CPImageViewer.framework */; };
+		083AD0651E2F1C67008CC029 /* CPImageViewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 083AD05F1E2F1B5D008CC029 /* CPImageViewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,28 @@
 			remoteGlobalIDString = 083AD01C1E2F1B1E008CC029;
 			remoteInfo = CPImageViewerTests;
 		};
+		083AD0661E2F1C67008CC029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 083AD0591E2F1B5D008CC029 /* CPImageViewer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 083AD0121E2F1B1E008CC029;
+			remoteInfo = CPImageViewer;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		083AD0681E2F1C67008CC029 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				083AD0651E2F1C67008CC029 /* CPImageViewer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		083AD0361E2F1B39008CC029 /* CPImageViewerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPImageViewerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				083AD0641E2F1C67008CC029 /* CPImageViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,10 +155,12 @@
 				083AD0321E2F1B39008CC029 /* Sources */,
 				083AD0331E2F1B39008CC029 /* Frameworks */,
 				083AD0341E2F1B39008CC029 /* Resources */,
+				083AD0681E2F1C67008CC029 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				083AD0671E2F1C67008CC029 /* PBXTargetDependency */,
 			);
 			name = CPImageViewerDemo;
 			productName = CPImageViewerDemo;
@@ -268,6 +294,11 @@
 			target = 083AD0351E2F1B39008CC029 /* CPImageViewerDemo */;
 			targetProxy = 083AD04B1E2F1B39008CC029 /* PBXContainerItemProxy */;
 		};
+		083AD0671E2F1C67008CC029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CPImageViewer;
+			targetProxy = 083AD0661E2F1C67008CC029 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -386,6 +417,7 @@
 		083AD0541E2F1B39008CC029 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CPImageViewerDemo/Info.plist;
@@ -399,6 +431,7 @@
 		083AD0551E2F1B39008CC029 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CPImageViewerDemo/Info.plist;

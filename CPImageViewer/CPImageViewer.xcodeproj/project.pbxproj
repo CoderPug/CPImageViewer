@@ -10,6 +10,7 @@
 		083AD01D1E2F1B1E008CC029 /* CPImageViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083AD0131E2F1B1E008CC029 /* CPImageViewer.framework */; };
 		083AD0221E2F1B1E008CC029 /* CPImageViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AD0211E2F1B1E008CC029 /* CPImageViewerTests.swift */; };
 		083AD0241E2F1B1E008CC029 /* CPImageViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 083AD0161E2F1B1E008CC029 /* CPImageViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		083AD0631E2F1C26008CC029 /* CPImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AD0621E2F1C26008CC029 /* CPImageViewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		083AD01C1E2F1B1E008CC029 /* CPImageViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPImageViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		083AD0211E2F1B1E008CC029 /* CPImageViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPImageViewerTests.swift; sourceTree = "<group>"; };
 		083AD0231E2F1B1E008CC029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		083AD0621E2F1C26008CC029 /* CPImageViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPImageViewer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				083AD0161E2F1B1E008CC029 /* CPImageViewer.h */,
 				083AD0171E2F1B1E008CC029 /* Info.plist */,
+				083AD0621E2F1C26008CC029 /* CPImageViewer.swift */,
 			);
 			path = CPImageViewer;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					083AD0121E2F1B1E008CC029 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					083AD01B1E2F1B1E008CC029 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				083AD0631E2F1C26008CC029 /* CPImageViewer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 		083AD0281E2F1B1E008CC029 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CPImageViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +345,7 @@
 		083AD0291E2F1B1E008CC029 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +364,7 @@
 		083AD02B1E2F1B1E008CC029 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CPImageViewerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CPImageViewerTests;
@@ -367,6 +376,7 @@
 		083AD02C1E2F1B1E008CC029 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CPImageViewerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CPImageViewerTests;
@@ -394,6 +404,7 @@
 				083AD0291E2F1B1E008CC029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		083AD02A1E2F1B1E008CC029 /* Build configuration list for PBXNativeTarget "CPImageViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +413,7 @@
 				083AD02C1E2F1B1E008CC029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

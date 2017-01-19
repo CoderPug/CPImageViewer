@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import CPImageViewer
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let temp = UIImageView()
+        temp.sayHi()
     }
 
     override func didReceiveMemoryWarning() {
